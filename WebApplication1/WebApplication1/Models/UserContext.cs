@@ -9,7 +9,6 @@ namespace WebApplication1.Models
     public class UserContext : DbContext
     {
         public DbSet<User> Users { get; set; }
-        public DbSet<Mail> Mails { get; set; }
         public UserContext(DbContextOptions<UserContext> options)
             : base(options)
         {
